@@ -1,10 +1,12 @@
-# <PROJECT_NAME_PLACEHOLDER>
+# PI-Interface-ABB-800xA-Oracle-Docs
 
-<!-- Describe purpose of doc project here -->
+User documentation for PI Interface for ABB 800xA Oracle.
 
-## License
+This repository consumes another repo as a subtree within the `/content` directory: https://github.com/osisoft/PI-Batch-Interface-Doc-Framework. To update the subtree, enter the following command:
 
-<a href="https://www.osisoft.com/copyright/">&copy; 2019 - 2021 OSIsoft, LLC. All rights reserved.</a>
+`git subtree pull --prefix content https://github.com/osisoft/PI-Batch-Interface-Doc-Framework main --squash`
+
+License &copy; 2019 - 2021 OSIsoft, LLC. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
 
