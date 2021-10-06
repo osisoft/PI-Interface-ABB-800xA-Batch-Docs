@@ -1,1 +1,1 @@
-PI Interface for ABB 800xA
+PI Interface for ABB 800xA Batch
