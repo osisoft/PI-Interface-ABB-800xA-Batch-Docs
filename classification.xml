@@ -125,12 +125,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">interface</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Oracle</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">interface</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Oracle</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch</Data></Cell>
    </Row>
    <Row>
     <Cell><Data ss:Type="String">default</Data></Cell>
@@ -156,8 +156,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>20</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>17</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
