@@ -29,6 +29,7 @@
       - topicUid: BIF_EquipmentHierarchy # No modifications required
     - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
     - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
+  - topicUid: BIF_EquipmentArbitrationEventsUnavailable
   - topicUid: BIF_TemplatesForMappingDataSourceEvents
     items:
     - topicUid: BIF_PlaceholdersAndAdvancedParsing
