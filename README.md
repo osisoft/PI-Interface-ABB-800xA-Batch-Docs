@@ -1,6 +1,9 @@
-# PI-Interface-ABB-800xA-Oracle-Docs
+# PI Interface ABB 800xA Batch Docs
 
-User documentation for PI Interface for ABB 800xA Oracle.
+User documentation for PI Interface for ABB 800xA Batch.
+
+>**Note:** This batch interface for ABB 800xA supports Oracle databases. If you are looking for the version of ABB 800xA that supports Microsoft SQL Server, see the [
+PI Interface for ABB 800xA Production Response Batch Docs](https://github.com/osisoft/PI-Interface-ABB-800xA-Production-Response-Batch-Docs) repository. 
 
 This repository consumes another repo as a subtree within the `/content` directory: https://github.com/osisoft/PI-Batch-Interface-Doc-Framework. To update the subtree, enter the following command:
 
