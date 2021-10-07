@@ -11,7 +11,7 @@ uid: BIF_SupportedFeatures
 
 | Feature | Support |
 | ------- | ------- |
-| Part Number | <UPDATE_FOR_INTERFACE> |
+| Part Number | PI-IN-ABB-800A-NTI |
 | Auto-creates PI Points and equipment assets? | Yes |
 | Point Builder Utility | No |
 | Stores batch data in PIBatch Database and PI Module Database | No |
