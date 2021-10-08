@@ -58,15 +58,14 @@
     items:
     - topicUid: BIF_WindowsCredentialManagerAuthentication # Modify for interface
   - topicUid: BIF_SourceTab # Modify for interface
-  - topicUid: BIF_AlarmTagTemplates # Modify for interface
   - topicUid: BIF_TemplatesTab # Modify for interface
     items: 
-    - topicUid: BIF_TagTemplates # Modify for interface
     - topicUid: BIF_PropertyTemplates # Modify for interface
-    - topicUid: BIF_EventFramesLinkTemplates # Modify for interface
     - topicUid: BIF_RecipeTemplatesEFIM # Modify for interface
       items: 
       - topicUid: BIF_DefineRecipeTemplates # Modify for interface
+    - topicUid: BIF_TagTemplates # Modify for interface
+    - topicUid: BIF_EventFramesLinkTemplates # Modify for interface
     - topicUid: BIF_Triggers # Modify for interface
   - topicUid: BIF_FiltersTab # Modify for interface
   - topicUid: BIF_TimeSettingsTab # Modify for interface
