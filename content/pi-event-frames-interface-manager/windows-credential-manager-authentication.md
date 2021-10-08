@@ -38,9 +38,9 @@ The following table lists credentials for [!include[interface](../includes/produ
 
 | Credentials | Name |
 |--|--|
-| PI Data server | [!include[interface](../includes/dir-short.md)]_X_PI |
-| PI Asset Framework | [!include[interface](../includes/dir-short.md)]_X_AF |
-| Batch interface data source | [!include[interface](../includes/dir-short.md)]_X_Source_Y |
+| PI Data server | PI[!include[interface](../includes/dir-short.md)]_X_PI |
+| PI Asset Framework | PI[!include[interface](../includes/dir-short.md)]_X_AF |
+| Batch interface data source | PI[!include[interface](../includes/dir-short.md)]_X_Source_Y |
 
 **Notes:** 
 
