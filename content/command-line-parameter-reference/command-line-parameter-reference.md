@@ -24,9 +24,6 @@ The following headings describe each command line parameter available.
 
 (Optional) Enable the creation of unit batches for recipes in units that are allocated at the phase level rather than the unit batch level. By default, the interface requires the unit name to be present in the unit batch start event. When you enable /adu, the interface creates the unit batch and defers setting the unit name until the phase-level allocation event arrives.
 
-### `/batchrcp =[true | false]` 
-
-(ABB only) Collect full task hierarchy. By default, the interface collects four levels. For details, refer to ABB 800xA batch start and stop events.
 
 ### `/bidm =<list>` 
 
@@ -91,15 +88,6 @@ Example:
 
 (Optional – event frames only) Disable propagation of referenced elements to children. By default, the interface propagates each event frame element reference to its children event frames.
 
-### `/equipmentXML =<filepath>` 
-
-(Optional) Specifies the location of the DeltaV-generated equipment hierarchy XML file. The EMDVB interface uses this reference data to locate missing ProcessCell field by searching based on the combination of Area and Unit fields. Valid only when a DeltaV AE SQL datasource is defined. 
-
-Example: 
-
-```text
-/EquipmentXML="C:\DeltaV\Equip.xml"
-```
 
 ### `/failoverID =<string>`
 
@@ -314,15 +302,13 @@ Specifies how long the interface retries a failed attempt to write data before t
 
 (Optional) Specifies recovery start time. The interface recovers batches that start after the specified time, as well as batches that start before the specified time but end after it. Specify the time using the interface node format and time zone.
 
-### `/rti`
-
-Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedure, and Operation Recipe fields. Emerson EVT data source only.
-
 ### `/scan =<seconds>`
 
 (Optional) Specifies, in seconds, how often to scan the data source for new data. The default is 60 seconds. A scan that returns a large amount of data can cause the interface to skip the subsequent scan.
 
-### `/singlerun` | (Optional) Perform one scan and stop.
+### `/singlerun`
+
+(Optional) Perform one scan and stop.
 
 ### `/smp ="equipment path"`
 
@@ -330,13 +316,6 @@ Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedur
 
 `\\<RootModule>\<SubModule>\<…>`
 
-### `/sqlconnto =<seconds>` (DeltaV SQL only)
-
-(Optional) Override the default SQL timeout setting (60 seconds).
-
-### `/sqldato=<seconds>` (DeltaV SQL only)
-
-(Optional) Override the default SQL data access timeout setting (100 seconds).
 
 ### `/swaptime =<seconds>`
 
@@ -354,10 +333,6 @@ Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedur
 
 (Optional) Specifies how the interface interprets event timestamps from an SQL data source. Options are local time or GMT. Default is GMT.
 
-### `/uobev` (DeltaV SQL 9.3+ only)
-
-(Optional) Directs the interface to use the original batch event view. By default the interface queries 17 tables to retrieve data for batch-associated events. Note that this view does not provide explicit [Descript], [Pval] and [EU] fields. Instead the [Descript] field combines data from all three fields. This option is provided for backward compatibility.
-
 ### `/ubr`
 
 Default settings for batch interfaces:
@@ -370,15 +345,7 @@ If `/UBR = true` the interface will use SYSTEM MESSAGE to control the start and 
 
 If `/UBR = false` the interface will use STATE CHANGE to control the start and end of event frames. Example State Change messages are RUNNING, REMOVED, ABORTED, COMPLETE, STOPPED, and ABANDON. The interface will combine the state change with the recipe ( Batch, UnitProcedure, Operation, Phase ) to determine which recipe step has changed state.
 
-Provided for backward compatibility with version 1.0.0.0 of the interface. |
-
-### `/WEBSRVDISABLED=[true | false]` 
-
-(Optional) If not added it will default to false.
-
-This parameter is only supported in interface PIEMDVBCS and allows the interface to ignore checking or sending requests to the Syncade workflow web services. If connecting to WF 4.9 this parameter must be set to true.
-
-Added in version 4.0.30.
+Provided for backward compatibility with version 1.0.0.0 of the interface.
 
 ### `/writelink= <AFelementpath>` 
 
