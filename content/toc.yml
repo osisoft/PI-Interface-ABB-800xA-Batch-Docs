@@ -15,7 +15,7 @@
       - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
   - topicUid: BIF_ConfigureInstancesForFailover # No modifications
-  - topicUid: BIF_InterfaceConfiguration # Customized for ABB
+  # topic requires customization - topicUid: BIF_InterfaceConfiguration # Customized for ABB
   - topicUid: BIF_PIServerConnectivity # No modifications required
   - topicUid: BIF_LoggingAndErrorMessages # No modifications required
 # How Batch Interfaces Work
