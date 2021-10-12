@@ -73,11 +73,11 @@ excludestates=COMPLETED,AB*ING,IDLING, COMPLE*
 
 (Optional) When set to `true`, the interface collects production data log (PDL) message log events. 
 
-#### `PROTECTEDPASSWORD=<password>`
+#### `PSWD=<password>`
 
 Required.
 
-The password for the user you are using to authenticate with the Oracle database. This password is encrypted upon entry.
+The password for the user you are using to authenticate with the Oracle database. This password is encrypted when saved.
 
 #### `SERVICE=<ABB_Service_Name>`
 
