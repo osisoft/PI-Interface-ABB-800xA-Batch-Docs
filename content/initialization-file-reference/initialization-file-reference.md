@@ -47,15 +47,17 @@ Source[<index>].<setting> = <value>
 
 The following headings describe the parameters for data source templates.
 
-#### `evtdir=<path>`
+#### `CURSOR=client|server`
 
-Required for event file data sources. This parameters defines the folder that contains the event files. 
+Optional.
 
-Example:
+Sets the cursor setting. Can be set to either `client` or `server`.
 
-```text
-Source[1].evtdir = D:\TEST\RELEASE\test_1
-``` 
+#### `DATABASE=<hostname>`
+
+Required.
+
+Name of the Oracle database. Contact your ABB 800xA Administrator for additional guidance if needed.
 
 #### `excludestates=<list>`
 
@@ -67,9 +69,21 @@ Examples:
 excludestates=COMPLETED,AB*ING,IDLING, COMPLE*
 ```
 
-#### `opcserver=<server name>`
+#### `PDL=true|false`
 
-Optional for OPC alarms and events data source. Specifies the name of the alarms and events server, if you are not using the default server.
+(Optional) When set to `true`, the interface collects production data log (PDL) message log events. 
+
+#### `PROTECTEDPASSWORD=<password>`
+
+Required.
+
+The password for the user you are using to authenticate with the Oracle database. This password is encrypted upon entry.
+
+#### `SERVICE=<ABB_Service_Name>`
+
+Required.
+
+Name of the ABB service.
 
 #### `skipphases=<list>`
 
@@ -98,6 +112,12 @@ Example:
 ```text
 skipunits = unit_1, u*2
 ```
+
+#### `USER=<user>`
+
+Required.
+
+A user that can authenticate with the Oracle database.
 
 ## Property template settings
 
@@ -183,8 +203,6 @@ Advanced parsing:
 ```text
 Property[1].Value = [BatchID] | event: [*,value="State*"] | [Descript] | val: [Pval]
 ```
-
-**Note:** For SQL data sources with the "Use original batch event view" option enabled (/UOBEV), you cannot use the [PVAL] or [EU] placeholders. To obtain this data you must parse it from the [DESCRIPT] placeholder.
 
 **Valid Placeholders**
 
