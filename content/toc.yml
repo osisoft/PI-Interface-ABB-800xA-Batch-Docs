@@ -21,29 +21,29 @@
 # How Batch Interfaces Work
 - topicUid: BIF_HowBatchInterfacesWork # No modifications required
   items:
-  - topicUid: BIF_HowInterfacesProcessBatchEventData # No modifications required
-    items: 
-    - topicUid: BIF_HowBatchDataIsStored # Modify for interface
-      items:
-      - topicUid: BIF_EventFrames # No modifications required
-      - topicUid: BIF_EquipmentHierarchy # No modifications required
-    - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
-    - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
-  - topicUid: BIF_EquipmentArbitrationEventsUnavailable
-  - topicUid: BIF_TemplatesForMappingDataSourceEvents
-    items:
-    - topicUid: BIF_PlaceholdersAndAdvancedParsing
-    - topicUid: BIF_TagTemplates
-      items:
-      - topicUid: BIF_TagTemplateExamples
-    - topicUid: BIF_LinkTemplates
-    - topicUid: BIF_PropertyTemplates
-    - topicUid: BIF_RecipeTemplates
-      items:
-      - topicUid: BIF_RecipeTemplateExamples
-    - topicUid: BIF_FilterIncomingEvents
-    - topicUid: BIF_TranslateForeignLanguageData
   - topicUid: BIF_InterfaceModes # No modifications required
+  - topicUid: BIF_HowInterfacesProcessBatchEventData # No modifications required
+  - topicUid: BIF_EquipmentArbitrationEventsUnavailable # No modifications required
+  - topicUid: BIF_HowBatchDataIsStored # Modify for interface
+    items: 
+    - topicUid: BIF_ThePIBatchDatabase # No modifications required
+    - topicUid: BIF_EventFrames # No modifications required
+    - topicUid: BIF_EquipmentHierarchy # No modifications required
+    - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
+      items:
+      - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
+  - topicUid: BIF_PlaceholdersAndAdvancedParsing
+  - topicUid: BIF_TagTemplates
+    items:
+    - topicUid: BIF_TagTemplateExamples
+  - topicUid: BIF_LinkTemplates
+  - topicUid: BIF_PropertyTemplates
+  - topicUid: BIF_RecipeTemplates
+    items:
+    - topicUid: BIF_RecipeTemplateExamples
+  - topicUid: BIF_FilterIncomingEvents
+  - topicUid: BIF_TemplatesForMappingDataSourceEvents  
+  - topicUid: BIF_TranslateForeignLanguageData
 # Specific Considerations
 - topicUid: BIF_Interface # Modify for interface
   items:
