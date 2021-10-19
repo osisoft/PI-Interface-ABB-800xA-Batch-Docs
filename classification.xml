@@ -21,8 +21,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>11970</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>6820</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <TabRatio>500</TabRatio>
@@ -109,12 +109,12 @@
  </Names>
  <Worksheet ss:Name="classification">
   <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="4" x:FullColumns="1"
-   x:FullRows="1" ss:DefaultColumnWidth="60.75">
+   x:FullRows="1" ss:DefaultColumnWidth="61" ss:DefaultRowHeight="12.5">
    <Column ss:AutoFitWidth="0" ss:Width="205.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="126.75"/>
-   <Column ss:AutoFitWidth="0" ss:Width="75.75"/>
-   <Column ss:AutoFitWidth="0" ss:Width="140.25"/>
-   <Column ss:AutoFitWidth="0" ss:Width="75.75" ss:Span="2"/>
+   <Column ss:AutoFitWidth="0" ss:Width="127"/>
+   <Column ss:AutoFitWidth="0" ss:Width="76"/>
+   <Column ss:AutoFitWidth="0" ss:Width="140.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="76" ss:Span="2"/>
    <Row>
     <Cell><Data ss:Type="String">Filename</Data></Cell>
     <Cell><Data ss:Type="String">Title</Data></Cell>
@@ -125,12 +125,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">interface</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch_4.2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">interface</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PI-Interface-for-ABB-800xA-Batch_4.2</Data></Cell>
    </Row>
    <Row>
     <Cell><Data ss:Type="String">default</Data></Cell>
@@ -156,8 +156,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>17</ActiveRow>
-     <ActiveCol>4</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -166,11 +166,11 @@
  </Worksheet>
  <Worksheet ss:Name="tag index lookup">
   <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="141" x:FullColumns="1"
-   x:FullRows="1" ss:DefaultColumnWidth="60.75">
+   x:FullRows="1" ss:DefaultColumnWidth="61" ss:DefaultRowHeight="12.5">
    <Column ss:AutoFitWidth="0" ss:Width="108"/>
-   <Column ss:Width="278.25"/>
-   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="75.75" ss:Span="3"/>
-   <Row>
+   <Column ss:Width="278.5"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="76" ss:Span="3"/>
+   <Row ss:Height="13">
     <Cell ss:StyleID="s63"><Data ss:Type="String">Notes</Data></Cell>
    </Row>
    <Row>
@@ -179,7 +179,7 @@
    <Row>
     <Cell><Data ss:Type="String">Apply Product Family only to publications where family is relevant. See Tags by Publication Lookup tab. Some products should not have a family (OCS, Server, Edge, Cloud Connect). Product Family is used to group and filter groups of parallel products.</Data></Cell>
    </Row>
-   <Row ss:Index="5" ss:StyleID="s63">
+   <Row ss:Index="5" ss:Height="13" ss:StyleID="s63">
     <Cell><Data ss:Type="String">Product Family</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
@@ -630,7 +630,7 @@
  </Worksheet>
  <Worksheet ss:Name="Sheet1">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
-   x:FullRows="1">
+   x:FullRows="1" ss:DefaultRowHeight="12.5">
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
