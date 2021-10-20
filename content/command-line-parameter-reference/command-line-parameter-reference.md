@@ -111,9 +111,6 @@ In the last example, the first and second masks do not match, so the third mask 
 
 (Optional) Disable arbitration counters: directs the interface to release a unit on the first resource release event even if the number of acquire events is higher than number of release events. By default, the interface requires the number of acquire and release events for a unit to be the same.
 
-### `/damcae` 
-
-(Optional) Ignore events from a DeltaV Event Chronicle (alarms & events) data source when creating or checking PI Module Database objects. If the module path defined for an AlarmTag[#].Alias entry contains the root node symbol ($), the interface checks the module path regardless of whether this option is enabled.
 
 ### `/datasec=<string>`
 
