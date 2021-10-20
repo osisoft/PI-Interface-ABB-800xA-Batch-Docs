@@ -29,9 +29,7 @@
     - topicUid: BIF_ThePIBatchDatabase # No modifications required
     - topicUid: BIF_EventFrames # No modifications required
     - topicUid: BIF_EquipmentHierarchy # No modifications required
-    - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
-      items:
-      - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
+    - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
   - topicUid: BIF_PlaceholdersAndAdvancedParsing
   - topicUid: BIF_TagTemplates
     items:
