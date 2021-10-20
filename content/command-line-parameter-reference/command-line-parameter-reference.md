@@ -21,7 +21,6 @@ The following headings describe each command line parameter available.
 * [`/bidm =<list>`](#bidm-list)
 * [`/cachetime=<days>`](#cachetimedays)
 * [`/dac`](#dac)
-* [`/damcae`](#damcae)
 * [`/datasec=<string>`](#datasecstring)
 * [`/db =[#]`](#db-)
 * [`/dpretc`](#dpretc)
