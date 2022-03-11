@@ -6,8 +6,6 @@ uid: BIF_ConfigureTagTemplates
 
 1. To create or update PI tags when specified events are read, configure tag templates.
 
-2. To create or update PI tags based on alarms read from an Emerson DeltaV Event Chronicle (alarms & events) data source, configure alarm tag templates.
-
 3. To define tag templates using PI Event Frame Interface Manager, go to the Templates page and click the Tag tab.
 
 4. To configure the name of the tag to be created or updated, specify the Name field. To assign tag names based on incoming data, use placeholders.
