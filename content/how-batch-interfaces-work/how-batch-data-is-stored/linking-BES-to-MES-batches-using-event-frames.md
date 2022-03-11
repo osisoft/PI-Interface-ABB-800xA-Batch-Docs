@@ -25,13 +25,15 @@ For example, the following figure illustrates an event frame created based on a 
 The .ini file code for creating those event frames looks like this example:
 
 ```text
-HOST=jshearouse5520
+HOST=ABBMachineHostName
 PS=EMDVBCS
 ID=998
-AFHOST=jshearouse5520
+AFHOST=AFDatabase
 AFDATABASE=EMDVBCS
 DB=2
-Source[1].msmqpath=jshearouse5520\private$\historian2
-Source[1].websrvpath=example.com
+Source[1].DATABASE=ABBDatabaseName
+Source[1].USER=UserName
+Source[1].PSWD=EncryptedPassword
+Source[1].SERVICE=Windows-XXXX.xxx.int
 WRITELINK=\\LINKPARENT\LINKTEST
 ```
