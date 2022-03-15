@@ -28,7 +28,6 @@ The following headings describe each command line parameter available.
 * [`/failovertag =<tag name>`](#failovertag-tag-name)
 * [`/host =host:port`](#host-hostport)
 * [`/id =<identifier>`](#id-identifier)
-* [`/includeincompletedata`](#includeincompletedata)
 * [`/inifile =<path>`](#inifile-path)
 * [`/link =<AF element path>`](#link-af-element-path)
 * [`/maxqtf =<days>`](#maxqtf-days)
@@ -150,15 +149,6 @@ Additionally, you can enable or disable all tags using the `ALL` or `NONE` optio
 /enabledmonitortags=NONE
 ```
 
-### `/equipmentXML =<filepath>` 
-
-(Optional) Specifies the location of the DeltaV-generated equipment hierarchy XML file. The EMDVB interface uses this reference data to locate missing ProcessCell field by searching based on the combination of Area and Unit fields. Valid only when a DeltaV AE SQL datasource is defined. 
-
-Example: 
-
-```text
-/EquipmentXML="C:\DeltaV\Equip.xml"
-```
 
 ### `/failoverID =<string>`
 
@@ -186,10 +176,6 @@ Examples:
 ### `/id =<identifier>`
 
 (Required) Specify a one- to nine-number identifier for the interface instance. Assigned to the Location1 attribute of tags that the interface instance updates.
-
-### `/includeincompletedata`
-
-(Optional) Enables the collection of all unit procedures without and associated UNIT. Without this option unit procedures that do not have phase state that associated with a particular UNIT will not be shown as events in PI AF.
 
 ### `/inifile =<path>`
 
