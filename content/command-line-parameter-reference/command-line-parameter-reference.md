@@ -24,7 +24,7 @@ The following headings describe each command line parameter available.
 * [`/datasec=<string>`](#datasecstring)
 * [`/db =[#]`](#db-)
 * [`/dpretc`](#dpretc)
-* [`/enabledmonitortags`](#enabledmonitortags-<TAG>)
+* [`/enabledmonitortags =<TAG>`](#enabledmonitortags-TAG)
 * [`/failoverID =<string>`](#failoverid-string)
 * [`/failovertag =<tag name>`](#failovertag-tag-name)
 * [`/host =host:port`](#host-hostport)
