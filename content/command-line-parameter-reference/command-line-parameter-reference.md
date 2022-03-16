@@ -35,7 +35,7 @@ The following headings describe each command line parameter available.
 * [`/maxstoptime =<seconds>`](#maxstoptime-seconds)
 * [`/merge`](#merge)
 * [`/mode =<mode>`](#mode-mode)
-* [`/monitortagwindow =<days>`](#monitortagwindow)
+* [`/monitortagwindow =<days>`](#monitortagwindow-days)
 * [`/mop`](#mop)
 * [`/mup`](#mup)
 * [`/noarbitration`](#noarbitration)
