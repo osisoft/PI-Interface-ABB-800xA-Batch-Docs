@@ -63,6 +63,7 @@ The following headings describe each command line parameter available.
 * [`/tbse`](#tbse)
 * [`/ts=GMT | LCL`](#tsgmt--lcl)
 * [`/ubr`](#ubr)
+* [`/uidlist=<list>`](#writelink-afelementpath)
 * [`/writelink= <AFelementpath>`](#writelink-afelementpath)
 
 ### `/abto =<#days>` 
@@ -409,6 +410,12 @@ If `/UBR = true` the interface will use SYSTEM MESSAGE to control the start and 
 If `/UBR = false` the interface will use STATE CHANGE to control the start and end of event frames. Example State Change messages are RUNNING, REMOVED, ABORTED, COMPLETE, STOPPED, and ABANDON. The interface will combine the state change with the recipe ( Batch, UnitProcedure, Operation, Phase ) to determine which recipe step has changed state.
 
 Provided for backward compatibility with version 1.0.0.0 of the interface.
+
+### `/uidlist=<list>`
+
+(Optional) Recover specified manufacturing orders, then exit. Specify a comma-separated list of unique IDs for the manufacturing orders to be recovered. This parameter overrides any settings specified for the /rst and /ret recovery switches.
+
+Example: /uidlist=MOKey#1, MOKey#2
 
 ### `/writelink= <AFelementpath>` 
 
