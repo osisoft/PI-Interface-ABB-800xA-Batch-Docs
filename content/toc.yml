@@ -39,6 +39,7 @@
   - topicUid: BIF_RecipeTemplates
     items:
     - topicUid: BIF_RecipeTemplateExamples
+    - topicUid: BIF_RecipeDefaultProperties
   - topicUid: BIF_FilterIncomingEvents
   - topicUid: BIF_TemplatesForMappingDataSourceEvents  
   - topicUid: BIF_TranslateForeignLanguageData
