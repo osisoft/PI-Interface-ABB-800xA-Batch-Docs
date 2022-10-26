@@ -29,6 +29,7 @@ The following headings describe each command line parameter available.
 * [`/failovertag =<tag name>`](#failovertag-tag-name)
 * [`/host =host:port`](#host-hostport)
 * [`/id =<identifier>`](#id-identifier)
+* [`/includeincompletedata`](#includeincompletedata)
 * [`/inifile =<path>`](#inifile-path)
 * [`/link =<AF element path>`](#link-af-element-path)
 * [`/maxqtf =<days>`](#maxqtf-days)
@@ -179,6 +180,10 @@ Examples:
 ### `/id =<identifier>`
 
 (Required) Specify a one- to nine-number identifier for the interface instance. Assigned to the Location1 attribute of tags that the interface instance updates.
+
+### `/includeincompletedata`
+
+(Optional) Enables the collection of all unit procedures without and associated UNIT. Without this option unit procedures that do not have phase state that associated with a particular UNIT will not be shown as events in PI AF.
 
 ### `/inifile =<path>`
 
