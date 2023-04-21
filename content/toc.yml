@@ -1,12 +1,12 @@
 # Introduction
 - topicUid: BIF_Introduction # Modify for interface
   items:
+  - topicUid: BIF_InterfaceModes # No modifications required
   - topicUid: BIF_SupportedFeatures # Modify for interface
   - topicUid: BIF_ReferenceManuals # No edits required
 # Installation Prerequisites
-- topicUid: BIF_InstallationPrerequisites # Modify for interface
+- topicUid: BIF_InterfaceConfiguration # Modify for interface
   items: 
-  # Install DLLs topic? 
   - topicUid: BIF_InstallationPrerequisites # No modifications required
   - topicUid: BIF_SecurityOverview # No modifications required
     items:
@@ -14,37 +14,27 @@
       - topicUid: BIF_ConfigureSecurityForPIAF # No modifications required
       - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
-  - topicUid: BIF_ConfigureInstancesForFailover # No modifications
-  # topic requires customization - topicUid: BIF_InterfaceConfiguration # Customized for ABB
   - topicUid: BIF_PIServerConnectivity # No modifications required
   - topicUid: BIF_LoggingAndErrorMessages # No modifications required
 # How Batch Interfaces Work
 - topicUid: BIF_HowBatchInterfacesWork # No modifications required
   items:
-  - topicUid: BIF_InterfaceModes # No modifications required
   - topicUid: BIF_HowInterfacesProcessBatchEventData # No modifications required
-  - topicUid: BIF_EquipmentArbitrationEventsUnavailable # No modifications required
-  - topicUid: BIF_HowBatchDataIsStored # Modify for interface
     items: 
-    - topicUid: BIF_ThePIBatchDatabase # No modifications required
-    - topicUid: BIF_EventFrames # No modifications required
+    - topicUid: BIF_InterfaceModes # No modifications required
+    - topicUid: BIF_HowBatchDataIsStored # Modify for interface
+      items:
+      - topicUid: BIF_EventFrames # No modifications required
     - topicUid: BIF_EquipmentHierarchy # No modifications required
+    - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
     - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
-  - topicUid: BIF_PlaceholdersAndAdvancedParsing
-  - topicUid: BIF_TagTemplates
-    items:
-    - topicUid: BIF_TagTemplateExamples
-  - topicUid: BIF_LinkTemplates
-  - topicUid: BIF_PropertyTemplates
-  - topicUid: BIF_RecipeTemplates
-    items:
-    - topicUid: BIF_RecipeTemplateExamples
-    - topicUid: BIF_RecipeDefaultProperties
-  - topicUid: BIF_FilterIncomingEvents
-  - topicUid: BIF_TemplatesForMappingDataSourceEvents  
-  - topicUid: BIF_TranslateForeignLanguageData
+  - topicUid: BIF_TemplatesForMappingDataSourceEvents
 # Specific Considerations
+#
+# Note: Depending on inteface, this section either begins with BIF_Interface or BIF_WorkflowSupport
+#
 - topicUid: BIF_Interface # Modify for interface
+- topicUid: BIF_WorkflowSupport # Modify for interface
   items:
   - topicUid: BIF_DataSources # Modify for interface
   - topicUid: BIF_StartAndStopEvents # Modify for interface
@@ -57,14 +47,15 @@
     items:
     - topicUid: BIF_WindowsCredentialManagerAuthentication # Modify for interface
   - topicUid: BIF_SourceTab # Modify for interface
+  - topicUid: BIF_AlarmTagTemplates # Modify for interface
   - topicUid: BIF_TemplatesTab # Modify for interface
     items: 
+    - topicUid: BIF_TagTemplates # Modify for interface
     - topicUid: BIF_PropertyTemplates # Modify for interface
+    - topicUid: BIF_EventFramesLinkTemplates # Modify for interface
     - topicUid: BIF_RecipeTemplatesEFIM # Modify for interface
       items: 
       - topicUid: BIF_DefineRecipeTemplates # Modify for interface
-    - topicUid: BIF_TagTemplates # Modify for interface
-    - topicUid: BIF_EventFramesLinkTemplates # Modify for interface
     - topicUid: BIF_Triggers # Modify for interface
   - topicUid: BIF_FiltersTab # Modify for interface
   - topicUid: BIF_TimeSettingsTab # Modify for interface
@@ -82,6 +73,8 @@
   - topicUid: BIF_InitializationFileExamples # Modify for interface
 # Diagnostic Point Reference
 - topicUid: BIF_DiagnosticPointReference # No modifications required
+# Event file monitor utility
+- topicUid: BIF_EventFileMonitorUtility # No modifications required
 # Glossary
 - topicUid: BIF_Glossary
 # Technical Support and Feedback
