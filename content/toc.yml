@@ -80,5 +80,5 @@
 - topicUid: BIF_EventFileMonitorUtility # No modifications required
 # Glossary
 - topicUid: BIF_Glossary
-# Technical Support and Feedback
-- topicUid: BIF_TechnicalSupportAndFeedback
+# Release Notes
+- topicUid: ABBReleaseNotes
