@@ -22,7 +22,7 @@ There are no enhancements for this release.
 
 ## Fixes
 
-This section lists items that were resolved or added in this release of PI Interface for Emerson Delta V.
+This section lists items that were resolved or added in this release. 
 
 | Work Item | Description                                                                     |
 | :-------- | :------------------------------------------------------------------------------ |
