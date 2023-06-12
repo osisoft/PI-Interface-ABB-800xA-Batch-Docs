@@ -10,11 +10,14 @@ PI Interface for ABB800xA Batch Release
 
 ## Overview
 
-PI Interface for ABB 800xA Batch collects ABB system data from an Oracle-based 800xA backend to create batches in the batch database or event frames in PI Asset Framework.
+The PI Interface for ABB 800xA Batch collects ABB system data from an Oracle-based 800xA backend to create event frames in PI Asset Framework.
 
-OSIsoft offers two ABB 800xA Batch interfaces: one for the Production Data Log (an Oracle-based 800xA backend) and one for Production Response (SQL-based 800xA backend). PI Interface for ABB 800xA Batch 5.1.2.7 supports version 6.0.3.2 and 6.0.3.3 of the ABB 800xA Batch system that use Oracle 9.2.0.7.0 and above as the batch historian.
+We offer two ABB 800xA Batch interfaces: one for the Production Data Log (an Oracle-based 800xA backend) and one for Production Response (SQL-based 800xA backend). PI Interface for ABB 800xA Batch 5.1.2.7 supports version 6.0.3.2 and 6.0.3.3 of the ABB 800xA Batch system that use Oracle 9.2.0.7.0 and above as the batch historian.
 
 This interface allows users to specify which events trigger event frame creation, configure how the property and tags are named, and define the process data that is stored in PI. 
+
+The 5.1.2.7 release of PI Interface for ABB 8000xA Batch internally replaces PI SDK with AF SDK - this improves the security, robustness, and communication capabilities of the interface. As a result, this interface only writes Event Frames to a PI AF Server, and disallows creating PI Batches in the PI Batch Database.
+Users creating PI Batches in the PI Batch Database will need to migrate to Event Frames in order to utilize this version of the interface.
 
 ## Enhancements
 
@@ -49,9 +52,8 @@ This section lists items that were resolved or added in this release.
 | 22281     | Procedures created by Operation recipes are properly updated extended properties for determining end time and merge. |
 | 22283     | The Event log source is created during the interface install step. |
 | 22289     | When network interruptions cause AFSDK to becomes out of sync and throw duplicate uniqueid exceptions, the interface attempts to complete the rest of the checkin, set the offending event frame(s) to a checked in state, and exits. | 
+| 23832     | A delay (/DELAYBUFFER) was added so the source data is available at the time of query. This helps event start times such as __BATCHSTART. |
 | 24117     | Interface now supports the INCLUDEINCOMPLETEDATA configuration option. If set to true, the interface creates unit procedures and all its children without a unit. |
-| 24361     | All boost library calls were replaced with native C++ and STL functions. |
-| 24661     | Boost is no longer used for JSON processing. Microsoft Net library replaces it. 
 | 25811     | PI data server collectives and PI buffering to multiple PI data servers is now supported. |
 | 25995     | There is a new AFERR (-500) value that gets set on the Batch Status tag during an EFGEN AF check in error. Customers can monitor the value of the tag and notifications and analyses can be performed in the event that an error occurs. |
 | 26466     | Batch Interfaces now support an AF Interface Statistics element that stores the values of the PI tags recorded during interface execution. The location of the newly created element can be configured using the Batch Interface Configuration Manager and passed through the INI file. |
