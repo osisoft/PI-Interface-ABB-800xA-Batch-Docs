@@ -8,7 +8,7 @@ uid: BIF_Overview
 
 [!include[interface](../includes/product-long.md)] is classified as a PI interface for Batch Execution Systems (BES) and Manufacturing Execution Systems (MES), which are based on a common framework. 
 
-**Note:** If you record batch process data directly to PI tags and do not use a BES, you can generate batch data from PI tag data using the PiBaGen or PIEFGEN utilities. For details, refer to the manuals for these applications. For details, refer to the manuals for these applications.
+**Note:** If you record batch process data directly to PI tags and do not use a BES, you can generate batch data from PI tag data using the PIEFGEN utility,
 
 PI Batch Interfaces are scan-based interfaces that populate the PI Asset Framework (PI AF) database with event frames and elements.          
 
@@ -47,6 +47,6 @@ The physical model is composed of the following equipment-oriented hierarchy:
 * Equipment module 
 * Control module 
 
-Unit procedures from the data source are mapped to PIUnitBatches. Only a single unit procedure can be active in a unit at any given time, which restricts the configuration of recipes that can be run by the batch execution system if batch data is to be captured by the interface in a reliable and meaningful way. By contrast, event frames support parallel unit procedures natively. 
+Unit procedures from the data source are mapped to Unit Procedure level event frames. Event frames support parallel unit procedures natively. Only a single unit procedure can be active in a unit at any given time, which restricts the configuration of recipes that can be run by the batch execution system if batch data is to be captured by the interface in a reliable and meaningful way. By contrast, event frames support parallel unit procedures natively. 
 
 You can configure the interface to create PI points and properties by defining templates, which specify the events that trigger creation, configure how the property or tag is named, and define the data to be stored. 
