@@ -1,5 +1,5 @@
 ---
-uid: BIF_RecipeDefaultProperties
+uid: ABB_RecipeDefaultProperties
 ---
 
 # Recipe templates default properties
@@ -83,7 +83,6 @@ The following are the recipe template default values for the PHASE level:
 | Name | [Phase] 
 | Category | OSIBatch |
 | Template | Phase |
-| Module Path | [AREA]\\[PROCESSCELL]\\[UNIT]\\[PHASEMODULE])
 
 ## Phase State Level
 The following are the recipe template default values for the PHASE STATE level:
